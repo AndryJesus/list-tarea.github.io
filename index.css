@@ -1,0 +1,129 @@
+:root {
+  --purplee: #9d15e6;
+  --lightpurplee: #b24fe8;
+  --superlightpurplee: #d396f4;
+  --gray: #55557b;
+  --white: #fff;
+  --black: rgb(0, 0, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
+.container-notes {
+  width: 500px;
+  min-width: 300px;
+  padding: 20px;
+  background: transparent;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.botones {
+  border-radius: 30px;
+  width: 377px;
+  margin: 30px auto;
+  background-color: white;
+  border: 2px solid rgba(255, 255, 255, .2);
+}
+
+.botones input[type="text"] {
+  background: transparent;
+  padding: 10px;
+  border-radius: 40px;
+  border-style: none;
+  font-size: 1.5em;
+  text-align: justify;
+}
+
+.inputs-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contacts-list-item-tarea-input{
+  background-color: transparent;
+  border-style: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+}
+
+.botones input[type="text"]::placeholder {
+  color: var(--black);
+}
+
+.botones input[type="text"]:focus {
+  outline: none;
+}
+
+.botones input[type="submit"]{
+  font-size: 2em;
+  width: 57px;
+  height: 55px;
+  border-radius: 30px;
+  border-style: none;
+  color: white;
+  background-color: black;
+
+}
+
+.botones input[type="submit"]:hover{
+  background-color: rgb(108, 4, 199);
+  cursor: pointer;
+  color: var(--white);
+}
+
+body {
+  background: url('imagenes/img.jpg');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  text-align: center;
+  border-radius: 10px;
+  font-size: 3rem;
+  color: white;
+}
+
+.contador {
+  text-align: center;
+  color: white;
+  padding: 6px;
+}
+
+.list-container{
+  margin: 40px;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 10px;
+}
+
+.contacts-list-item {
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts-list-item-tarea-input{
+  width: 90%;
+}
+
+.edit-btn{
+  width: 25px;
+}
+
+.delete-btn{
+  width: 25px;
+}
+
